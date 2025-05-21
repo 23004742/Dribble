@@ -1,5 +1,5 @@
 # Project Responsive Web Design using Bootstrap
-## Date: 14/05/2025
+## Date:14.5.2025
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
@@ -26,315 +26,140 @@ Create a HTML file and include the needed Bootstrap components.
 Publish the website in the LocalHost.
 
 ## PROGRAM :
-
 ```
-program.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dribbble</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Dribbble Showcase</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#shots">Shots</a>
+          </li>
+        </ul>
 
-body {
-    font-family: 'Pacifico', cursive;
-    margin: 0;
-    padding: 0;
-    background-color: #bcd4d4; /* Soft teal background */
-    color: #2c3e50; /* Dark, contrasting text */
-}
+        
+        <form class="d-flex ms-3" action="#" method="GET">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-/* Navbar Customization */
-.navbar {
-    background-color: #00695c; /* Dark teal background */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
-}
 
-.navbar-brand, .navbar-nav .nav-link {
-    color: #ffffff !important;
-}
+  <div class="container-fluid bg-warning text-white py-5" id="home">
+    <div class="container text-center">
+      <h1 class="display-4">Discover the Best Creative Works</h1>
+      <p class="lead">Showcase your designs, get inspired, and connect with other creatives.</p>
+      <a href="#shots" class="btn btn-dark mt-3">Explore Shots</a>
+    </div>
+  </div>
 
-.navbar-nav {
-    flex-direction: row;
-}
+  
+  <div id="shots" class="container my-5">
+    <h2 class="text-center mb-4">Featured Design Shots</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+      <div class="col">
+        <div class="card shadow-sm border-0">
+          <img src="mlo.png" class="card-img-top" alt="Shot 1">
+          <div class="card-body">
+            <h5 class="card-title">Modern Logo Design</h5>
+            <p class="card-text">A sleek and minimalistic logo design for a modern tech company.</p>
+            <a href="#" class="btn btn-outline-secondary">View More</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card shadow-sm border-0">
+          <img src="blo.png" class="card-img-top" alt="Shot 2">
+          <div class="card-body">
+            <h5 class="card-title">Creative Branding</h5>
+            <p class="card-text">An innovative branding project to elevate a startup's image.</p>
+            <a href="#" class="btn btn-outline-secondary">View More</a>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col">
+        <div class="card shadow-sm border-0">
+          <img src="wlo.png" class="card-img-top" alt="Shot 3">
+          <div class="card-body">
+            <h5 class="card-title">Web Design Interface</h5>
+            <p class="card-text">A modern and user-friendly interface for a new website.</p>
+            <a href="#" class="btn btn-outline-secondary">View More</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card shadow-sm border-0">
+          <img src="ulo.png" class="card-img-top" alt="Shot 4">
+          <div class="card-body">
+            <h5 class="card-title">App UI Design</h5>
+            <p class="card-text">A seamless and intuitive user interface for a mobile application.</p>
+            <a href="#" class="btn btn-outline-secondary">View More</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card shadow-sm border-0">
+          <img src="ilo.png" class="card-img-top" alt="Shot 5">
+          <div class="card-body">
+            <h5 class="card-title">Minimalistic Poster</h5>
+            <p class="card-text">A modern and clean poster design perfect for advertising.</p>
+            <a href="#" class="btn btn-outline-secondary">View More</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card shadow-sm border-0">
+          <img src="palo.png" class="card-img-top" alt="Shot 6">
+          <div class="card-body">
+            <h5 class="card-title">Packaging Design</h5>
+            <p class="card-text">A creative and innovative design for product packaging.</p>
+            <a href="#" class="btn btn-outline-secondary">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-.navbar-nav .nav-link {
-    padding: 0 15px;
-}
+  
+  <footer 
+</html>class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Creative Showcase. Designed with passion by p.pramisha</p> 
+  </footer>
 
-.nav-item .btn-primary {
-    background-color: #ff7043; /* Coral for buttons */
-    border-color: #ff7043;
-}
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
-.nav-item .btn-primary:hover {
-    background-color: #d84315; /* Darker coral on hover */
-    border-color: #d84315;
-}
-
-/* Header Section */
-.header-section h3 {
-    font-weight: bold;
-    color: #00695c; /* Dark teal */
-}
-
-.header-section p {
-    font-size: 1.2em;
-    color: #37474f; /* Darker, readable text */
-}
-
-/* Gallery and Card adjustments */
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Card Styling */
-.card {
-    background-color: #ffffff;
-    border: 1px solid #cfd8dc;
-    border-radius: 10px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08); /* Light shadow */
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0; /* No padding around card */
-    margin-bottom: 20px;
-}
-
-.card:hover {
-    transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
-}
-
-/* Adjusted Card Image Styling */
-.gallery-img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0; /* Rounded top corners only */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 0; /* No bottom margin */
-}
-
-.card:hover .gallery-img {
-    transform: scale(1.05); /* Zoom effect on hover */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25); /* Subtle shadow on hover */
-}
-
-/* Card Content */
-.card-title {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #00695c; /* Dark teal for titles */
-    text-align: center;
-    margin-top: 15px;
-}
-
-.card-body {
-    padding: 20px;
-    text-align: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Footer */
-footer {
-    background-color: #00695c;
-    color: #ffffff;
-    text-align: center;
-    padding: 25px;
-    font-size: 0.9em;
-    margin-top: 40px;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Shadow above footer */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar-nav {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .gallery-section {
-        margin-top: 20px;
-    }
-
-    .card-body {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-section h3 {
-        font-size: 1.5em;
-    }
-
-    .header-section p {
-        font-size: 1em;
-    }
-}
-
-project.css
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-body {
-    font-family: 'Pacifico', cursive;
-    margin: 0;
-    padding: 0;
-    background-color: #bcd4d4; /* Soft teal background */
-    color: #2c3e50; /* Dark, contrasting text */
-}
-
-/* Navbar Customization */
-.navbar {
-    background-color: #00695c; /* Dark teal background */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
-}
-
-.navbar-brand, .navbar-nav .nav-link {
-    color: #ffffff !important;
-}
-
-.navbar-nav {
-    flex-direction: row;
-}
-
-.navbar-nav .nav-link {
-    padding: 0 15px;
-}
-
-.nav-item .btn-primary {
-    background-color: #ff7043; /* Coral for buttons */
-    border-color: #ff7043;
-}
-
-.nav-item .btn-primary:hover {
-    background-color: #d84315; /* Darker coral on hover */
-    border-color: #d84315;
-}
-
-/* Header Section */
-.header-section h3 {
-    font-weight: bold;
-    color: #00695c; /* Dark teal */
-}
-
-.header-section p {
-    font-size: 1.2em;
-    color: #37474f; /* Darker, readable text */
-}
-
-/* Gallery and Card adjustments */
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Card Styling */
-.card {
-    background-color: #ffffff;
-    border: 1px solid #cfd8dc;
-    border-radius: 10px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08); /* Light shadow */
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0; /* No padding around card */
-    margin-bottom: 20px;
-}
-
-.card:hover {
-    transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
-}
-
-/* Adjusted Card Image Styling */
-.gallery-img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0; /* Rounded top corners only */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 0; /* No bottom margin */
-}
-
-.card:hover .gallery-img {
-    transform: scale(1.05); /* Zoom effect on hover */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25); /* Subtle shadow on hover */
-}
-
-/* Card Content */
-.card-title {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #00695c; /* Dark teal for titles */
-    text-align: center;
-    margin-top: 15px;
-}
-
-.card-body {
-    padding: 20px;
-    text-align: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Footer */
-footer {
-    background-color: #00695c;
-    color: #ffffff;
-    text-align: center;
-    padding: 25px;
-    font-size: 0.9em;
-    margin-top: 40px;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Shadow above footer */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar-nav {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .gallery-section {
-        margin-top: 20px;
-    }
-
-    .card-body {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-section h3 {
-        font-size: 1.5em;
-    }
-
-    .header-section p {
-        font-size: 1em;
-    }
-}
-
+</body>
 ```
 
 ## OUTPUT:
-
-![pics](https://github.com/user-attachments/assets/9a33dbf0-7fbd-4e39-964e-522ae2a159cc)
+![Screenshot 2025-05-14 092115](https://github.com/user-attachments/assets/2dc30893-1fe7-403f-85f1-f74ba2150622)
 
 
 ## RESULT:
